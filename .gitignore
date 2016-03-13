@@ -1,0 +1,4 @@
+target/**
+*.log
+project/target/**
+project/project/**
