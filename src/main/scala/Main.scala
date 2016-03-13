@@ -9,8 +9,8 @@ case class Measurement(time: Int, clientId: String, payloadId: String, usage: In
 /**
   * This spark driver aggregates the raw CPU usage information to hourly information
   */
-class Main extends App {
-  override def main(args: Array[String]) {
+object Main {
+  def main(args: Array[String]) {
     val conf = new SparkConf().setAppName("cpuusage-aggregation").setMaster("localhost")
     val sc = new SparkContext(conf)
 
