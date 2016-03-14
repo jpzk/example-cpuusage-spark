@@ -12,7 +12,7 @@ case class Measurement(time: Int, clientId: String, payloadId: String, usage: In
   */
 object Main {
   def main(args: Array[String]) {
-    val conf = new SparkConf().setAppName("cpuusage-aggregation").setMaster("localhost")
+    val conf = new SparkConf().setAppName("cpuusage-aggregation")
     val sc = new SparkContext(conf)
 
     // sc is an existing SparkContext.
